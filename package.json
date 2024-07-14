@@ -6,10 +6,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "fs": "^0.0.1-security",
     "next": "latest",
     "openai": "^4.52.3",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-measure": "^2.5.2",
+    "styled-components": "^6.1.11"
   },
   "engines": {
     "node": ">=18"
