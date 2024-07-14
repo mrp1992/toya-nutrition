@@ -1,7 +1,7 @@
 // pages/index.js
 import {Fragment, useState} from 'react';
 import {Camera} from "../camera";
-import {Root, Footer, GlobalStyle, HeaderLabel, LoaderContainer, Loader} from "./styles";
+import {Root, Footer, GlobalStyle, HeaderLabel, LoaderContainer, Loader} from "../styles/styles";
 import NutritionalInfoDisplay from "../nutritionalInfoDisplay";
 
 
