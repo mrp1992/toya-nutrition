@@ -2,9 +2,9 @@ import React from 'react';
 
 const NutritionalInfoDisplay = ({ data }) => {
     console.log("data1", data);
-    // if (!data || !data.overallSummary) {
-    //     return <p>Loading or no data available...</p>;
-    // }
+    if (!data || !data.overallSummary) {
+        return <p>Please try again.</p>;
+    }
     return (
         <div className="nutritional-info-display">
             <h2>Overall Summary</h2>

@@ -1,7 +1,15 @@
 // pages/index.js
 import {Fragment, useState} from 'react';
 import {Camera} from "../camera";
-import {Root, Footer, GlobalStyle, HeaderLabel, LoaderContainer, Loader} from "../styles/styles";
+import {
+    Root,
+    Footer,
+    GlobalStyle,
+    HeaderLabel,
+    LoaderContainer,
+    Loader,
+    OpenCameraButton, CloseCameraButton
+} from "../styles/styles";
 import NutritionalInfoDisplay from "../nutritionalInfoDisplay";
 
 
@@ -71,7 +79,7 @@ export default function Home() {
                     {
                         isLoading && (
                             <LoaderContainer>
-                                <Loader />
+                                <Loader/>
                             </LoaderContainer>
                         )
                     }
@@ -84,15 +92,15 @@ export default function Home() {
                     )}
 
                     <Footer>
-                        <button onClick={() => setIsCameraOpen(true)}>Open Camera</button>
-                        <button
+                        <OpenCameraButton onClick={() => setIsCameraOpen(true)}> Open Camera</OpenCameraButton>
+                        <CloseCameraButton
                             onClick={() => {
                                 setIsCameraOpen(false);
                                 setCardImage(undefined);
                             }}
                         >
                             Close Camera
-                        </button>
+                        </CloseCameraButton>
                     </Footer>
                 </Root>
                 <GlobalStyle/>

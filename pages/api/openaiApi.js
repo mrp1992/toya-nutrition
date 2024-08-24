@@ -2,7 +2,7 @@
 import OpenAI from "openai";
 
 export default async function handler(req, res) {
-    const base64Img =req.body
+    const base64Img = req.body
 
     const aiOpen = new OpenAI({
         organization: process.env.OPENAI_ORG,

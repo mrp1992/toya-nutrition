@@ -82,16 +82,29 @@ export const Preview = styled.img`
   height: auto;
 `;
 
+export const OpenCameraButton = styled.button`
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+`
+
+export const CloseCameraButton = styled.button`
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+`
+
 export const Footer = styled.footer`
   position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50px;
-  background: silver;
+  height: 125px;
+  background: white;
 
   button {
     margin: 0 10px;
